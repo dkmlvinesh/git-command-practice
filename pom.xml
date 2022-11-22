@@ -10,7 +10,17 @@
 	
 	<properties>
 		<docker.image.prefix>kammana</docker.image.prefix>
-		<sonar.host.url>http://18.179.21.169:9000/</sonar.host.url>
+		<jdk.version>1.8</jdk.version>
+		<spring.version>5.1.2.RELEASE</spring.version>
+		<junit.version>4.11</junit.version>
+		<log4j.version>1.2.17</log4j.version>
+		<sonar.host.url>http://44.199.227.92:9000</sonar.host.url>
+		<sonar.login>admin</sonar.login>
+		<sonar.password>admin</sonar.password>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<maven.compiler.source>1.6</maven.compiler.source>
+        <maven.compiler.target>1.6</maven.compiler.target>
 
 	</properties>
 	<dependencies>
@@ -27,22 +37,20 @@
 	
 	<distributionManagement>
 		 <snapshotRepository>
-		    <id>nexusRepo</id>
-		    <url>http://54.224.88.218:8081/repository/sample-snapshots/</url>
+		    <id>nexus</id>
+		    <url>http://44.204.111.142:8081/repository/devops-snapshots/</url>
 		 </snapshotRepository>
 		
 		<repository>
-		    <id>nexusRepo</id>
-		    <url>http://54.224.88.218:8081/repository/sample-release/</url>
+		    <id>nexus</id>
+		    <url>http://44.204.111.142:8081/repository/devops-release/</url>
 		</repository>
   	</distributionManagement>
-	
 	<pluginRepositories>
 	    <pluginRepository>    
 		<id>maven1</id>
 		<name>Maven.org</name>
 		<url>http://repo1.maven.org/maven2</url>
 	    </pluginRepository>
-
-    </pluginRepositories>	
+	</pluginRepositories>
 </project>
