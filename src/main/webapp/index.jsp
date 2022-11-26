@@ -1,5 +1,5 @@
 <html>
 <body>
-	<h1 style="color: blue; font-size: 40px;" align="center"> </h1>trying a new website on tomcat server v
+	<h1 style="color: violet; font-size: 100px;" align="center"> </h1> tryin new commands 
 </body>
 </html>
